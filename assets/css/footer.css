@@ -1,0 +1,32 @@
+html,
+body {
+  height: 100%;
+  background-color: darkgoldenrod;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+  padding-bottom: 60px;
+  /* Espaço para o footer */
+}
+
+footer {
+  background-color: green ;
+  color: white;
+
+}
+
+/* estilo do Nav bar */
+ul .nav-link{ 
+  color: yellow;
+}
+
+.logo-navbar {
+  height: 100px; 
+  width: auto; 
+}
