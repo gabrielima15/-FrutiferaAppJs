@@ -2,4 +2,4 @@
 
 ## Objetivo:<br>
 
-### Nessa aula foi criada o Site pensando em salvar informações relacionada a necessidade de agricultores de guarda dados de suas colheitas. 123
+### Nessa aula foi criada o Site pensando em salvar informações relacionada a  agricultura do Brejo Paraibano e suas colheitas, onde o usuário(agricultor) irá adicionar todos as informações necessários para guardá-lo no localstorage. 

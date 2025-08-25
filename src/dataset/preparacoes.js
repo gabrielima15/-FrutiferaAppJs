@@ -1,7 +1,5 @@
-//  uma variavel lista em formato de Json com as frutas que serao exibidas em cards na pagina inicial.
-let fruteirasCard = [
+let fruteirasCard = [  //  uma variavel lista em formato de Json com as frutas que serao exibidas em cards na pagina inicial.
     {
-        
         src: "/assets/image/uva.jfif",
         nomeEspecie: "Uva",
         nomeCientifico: "Vitis vinifera",
@@ -34,9 +32,9 @@ let fruteirasCard = [
     }
 ];
 
-// lista vazia que ira receber os dados do formulario do cadastro de frutas.
-let preparacoesfrutas = [];
+
+let preparacoesfrutas = []; // lista vazia que ira receber os dados do formulario do cadastro de frutas.
 
 let inserirfrutas = () => { };
-// Exporta as variáveis para que possam ser usadas em outros arquivos .
-export { fruteirasCard, preparacoesfrutas, inserirfrutas };
+
+export { fruteirasCard, preparacoesfrutas, inserirfrutas }; // Exporta as variáveis para que possam ser usadas em outros arquivos .

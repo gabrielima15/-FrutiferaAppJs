@@ -14,12 +14,12 @@
 
 <body>
     <header>
-        <!-- NAVBAR -->
-        <nav class="navbar navbar-expand-lg bg-verde-personalizado">
+        
+        <nav class="navbar navbar-expand-lg bg-verde-personalizado"> <!-- NAVBAR -->
             <div class="container">
                 <a class="navbar-brand" href="#">
-                    <!-- logo imagem -->
-                    <img src="/assets/image/icon-fruta.jfif" alt="bootstrap" class="logo-navbar">
+                    
+                    <img src="/assets/image/icon-fruta.jfif" alt="bootstrap" class="logo-navbar"> <!-- logo imagem -->
                 </a>
         
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
@@ -35,7 +35,7 @@
                 </div>
             </div>
         </nav>
-        <!-- FIM NAVBAR -->
+        
     </header>
     <main class="container my-5">
         <div class="container">
@@ -53,8 +53,8 @@
             </div>
         </div>
     
-        <!-- Modal -->
-        <div class="modal fade" id="fruteiraModal" tabindex="-1" aria-labelledby="fruteiraModalLabel" aria-hidden="true">
+        
+        <div class="modal fade" id="fruteiraModal" tabindex="-1" aria-labelledby="fruteiraModalLabel" aria-hidden="true"> <!-- Modal -->
             <div class="modal-dialog">
                 <div class="modal-content">
                     <div class="modal-header">
@@ -63,29 +63,29 @@
                     </div>
                     <form id="form-fruteira">
                         <div class="modal-body">
-                            <!-- Nome Popular -->
-                            <div class="mb-3">
+                            
+                            <div class="mb-3"> <!-- Nome Popular -->
                                 <label for="nome-especie" class="form-label">Nome da Espécie (Popular)</label>
                                 <input type="text" class="form-control" id="nomeEspecie" name="nomeEspecie" >
                             </div>
-                            <!-- Nome Científico da frutífera -->
-                            <div class="mb-3">
+                           
+                            <div class="mb-3">  <!-- Nome Científico da frutífera -->
                                 <label for="nome-cientifico" class="form-label">Nome Científico</label>
                                 <input type="text" class="form-control" id="nomeCientifico" name="nomeCientifico" >
                             </div>
-                            <!-- Produção Média da Safra -->
-                            <div class="mb-3">
+                            
+                            <div class="mb-3"> <!-- Produção Média da Safra -->
                                 <label for="producao-media" class="form-label">Produção Média por Safra (Kg)</label>
                                 <input type="number" class="form-control" id="producaoMedia" name="producaoMedia">
                             </div>
-                            <!--  Registrar a Data do Plantio -->
-                            <div class="mb-3">
+                            
+                            <div class="mb-3"> <!--  Registrar a Data do Plantio -->
                                 <label for="data-plantio" class="form-label">Data do Plantio</label>
                                 <input type="date" class="form-control" id="dataPlantio" name="dataPlantio" >
                             </div>
                         </div>
-                        <!-- ponto de salvamento dos dados ou cancelar  -->
-                        <div class="modal-footer">
+                      
+                        <div class="modal-footer">   <!-- ponto de salvamento dos dados ou cancelar  -->
                             <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
                             <button type="submit" class="btn btn-primary">Salvar</button>
                         </div>
@@ -94,12 +94,12 @@
             </div>
         </div>
     
-        <!-- TABELA-->
-        <div class="table-responsive">
+        
+        <div class="table-responsive"> <!-- TABELA-->
             <table class="table table-hover table-bordered" id="fruteiras-tabela">
                 <thead class="table-light">
-                    <!-- Onde serão adicionado os itens  -->
-                    <tr>
+                  
+                    <tr> <!-- Onde serão adicionado os itens  -->
                         <th scope="col">ID</th>
                         <th scope="col">Nome Popular</th>
                         <th scope="col">Nome Científico</th>
@@ -108,16 +108,16 @@
                         <th scope="col">Idade (meses)</th>
                     </tr>
                 </thead>
-                <tbody id="fruteiras-tbody">
-                    <!-- Linhas da tabela serão inseridas aqui via JS -->
+                <tbody id="fruteiras-tbody"> <!-- Linhas da tabela serão inseridas aqui via JS -->
+                    
                 </tbody>
             </table>
         </div>
     </main>
 
 
-<!-- Rodapé da página -->
-    <footer class=" mt-auto">
+
+    <footer class=" mt-auto"> <!-- Rodapé da página -->
         <div class="container">
             <div class="d-flex align-items-center mb-4">
                 <img src="/assets/image/icon-fruta.jfif" alt="CafeBr Logo" class="mt-2 logo-navbar">
@@ -142,8 +142,8 @@
                 <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="bi bi-github"></i></a>
             </section>
 
-            <!-- descrição dos termos -->
-            <div class="text-center mb-3">
+           
+            <div class="text-center mb-3">  <!-- descrição dos termos -->
                 <a href="#" class="text-white me-3 text-decoration-none">Termos e condições</a>
                 <a href="#" class="text-white text-decoration-none">Política de privacidade</a>
             </div>
@@ -153,8 +153,8 @@
             </div>
         </div>
     </footer>
-    <!-- link dos arquivos JS e do node_modules-->
-    <script src="./node_modules/jquery/dist/jquery.min.js"></script>
+    
+    <script src="./node_modules/jquery/dist/jquery.min.js"></script> <!-- link dos arquivos JS e do node_modules-->
     <script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
     <script src="./node_modules/toastify-js/src/toastify.js"></script>
     <script src="/src/cadastrarFrutas.js"></script>
