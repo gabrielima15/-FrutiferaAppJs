@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,7 +10,6 @@
     <link rel="stylesheet" href="/node_modules/bootstrap-icons/font/bootstrap-icons.css">
     <link href="/assets/css/footer.css" rel="stylesheet">
     <link rel="shortcut icon" href="/assets/image/icon-fruta.jfif" type="image/x-icon">
-
 </head>
 
 <body>
@@ -20,6 +18,7 @@
         <nav class="navbar navbar-expand-lg bg-verde-personalizado">
             <div class="container">
                 <a class="navbar-brand" href="#">
+                    <!-- logo imagem -->
                     <img src="/assets/image/icon-fruta.jfif" alt="bootstrap" class="logo-navbar">
                 </a>
         
@@ -69,22 +68,23 @@
                                 <label for="nome-especie" class="form-label">Nome da Espécie (Popular)</label>
                                 <input type="text" class="form-control" id="nomeEspecie" name="nomeEspecie" >
                             </div>
-                            <!-- Nome Científico -->
+                            <!-- Nome Científico da frutífera -->
                             <div class="mb-3">
                                 <label for="nome-cientifico" class="form-label">Nome Científico</label>
                                 <input type="text" class="form-control" id="nomeCientifico" name="nomeCientifico" >
                             </div>
-                            <!-- Produção Média -->
+                            <!-- Produção Média da Safra -->
                             <div class="mb-3">
                                 <label for="producao-media" class="form-label">Produção Média por Safra (Kg)</label>
                                 <input type="number" class="form-control" id="producaoMedia" name="producaoMedia">
                             </div>
-                            <!-- Data do Plantio -->
+                            <!--  Registrar a Data do Plantio -->
                             <div class="mb-3">
                                 <label for="data-plantio" class="form-label">Data do Plantio</label>
                                 <input type="date" class="form-control" id="dataPlantio" name="dataPlantio" >
                             </div>
                         </div>
+                        <!-- ponto de salvamento dos dados ou cancelar  -->
                         <div class="modal-footer">
                             <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
                             <button type="submit" class="btn btn-primary">Salvar</button>
@@ -98,6 +98,7 @@
         <div class="table-responsive">
             <table class="table table-hover table-bordered" id="fruteiras-tabela">
                 <thead class="table-light">
+                    <!-- Onde serão adicionado os itens  -->
                     <tr>
                         <th scope="col">ID</th>
                         <th scope="col">Nome Popular</th>
@@ -115,7 +116,7 @@
     </main>
 
 
-
+<!-- Rodapé da página -->
     <footer class=" mt-auto">
         <div class="container">
             <div class="d-flex align-items-center mb-4">
@@ -138,9 +139,10 @@
     
                 <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="bi bi-linkedin"></i></a>
     
-                <a class="btn btn-outline-light btn-floating m-1" href="" role="button"><i class="bi bi-github"></i></a>
+                <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"><i class="bi bi-github"></i></a>
             </section>
-    
+
+            <!-- descrição dos termos -->
             <div class="text-center mb-3">
                 <a href="#" class="text-white me-3 text-decoration-none">Termos e condições</a>
                 <a href="#" class="text-white text-decoration-none">Política de privacidade</a>
@@ -151,7 +153,7 @@
             </div>
         </div>
     </footer>
-
+    <!-- link dos arquivos JS e do node_modules-->
     <script src="./node_modules/jquery/dist/jquery.min.js"></script>
     <script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
     <script src="./node_modules/toastify-js/src/toastify.js"></script>

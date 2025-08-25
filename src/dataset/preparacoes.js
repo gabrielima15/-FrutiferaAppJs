@@ -1,3 +1,4 @@
+//  uma variavel lista em formato de Json com as frutas que serao exibidas em cards na pagina inicial.
 let fruteirasCard = [
     {
         
@@ -33,7 +34,7 @@ let fruteirasCard = [
     }
 ];
 
-
+// lista vazia que ira receber os dados do formulario do cadastro de frutas.
 let preparacoesfrutas = [];
 
 let inserirfrutas = () => { };

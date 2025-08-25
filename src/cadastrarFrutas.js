@@ -15,7 +15,8 @@ const addFruteiraTabela = (fruteira) => {
     // Formata a data de plantio para o padrão brasileiro (dd/mm/aaaa)
     // Adiciona 'T00:00:00' para evitar problemas com fuso horário
     const dataFormatada = new Date(fruteira.dataPlantio + 'T00:00:00').toLocaleDateString('pt-BR');
-
+    
+    // sao valores do objeto fruteira que serao exibidos na tabela.
     const fruteiraTr = `<tr>
         <th scope="row">${fruteira.id}</th>
         <td>${fruteira.nomeEspecie}</td>
@@ -25,12 +26,13 @@ const addFruteiraTabela = (fruteira) => {
         <td>${idadeEmMeses}</td>
     </tr>`;
 
+    // adiciona a nova linha no final da tabela sem apagar o conteúdo existente.
     fruteirasTBody.insertAdjacentHTML('beforeend', fruteiraTr);
 };
 
-/**
- * Carrega as fruteiras salvas no localStorage e as exibe na tabela.
- */
+
+//  Carrega as fruteiras salvas no localStorage e as exibe na tabela.
+ 
 const carregarTabela = () => {
     const fruteiras = JSON.parse(localStorage.getItem('fruteiras')) ?? [];
     for (const fruteira of fruteiras) {
@@ -38,7 +40,7 @@ const carregarTabela = () => {
     }
 };
 
-
+// A função preenche os inputs do  formulário com os valores específicos.
 const setPreparacaoFormValues = (nomeEspecie = '', nomeCientifico = '', producaoMedia = '', dataPlantio = '') => {
     const nomeEspecieInput = document.querySelector('#nomeEspecie');
     const nomeCientificoInput = document.querySelector('#nomeCientifico');
@@ -51,9 +53,9 @@ const setPreparacaoFormValues = (nomeEspecie = '', nomeCientifico = '', producao
     dataPlantioInput.value = dataPlantio;
 };
 
-/**
- * Manipula o evento de envio do formulário de cadastro de fruteira.
- */
+
+// Manipula o evento de envio do formulário de cadastro de fruteira.
+ 
 const handleSubmit = (event) => {
     event.preventDefault();
 
@@ -79,12 +81,8 @@ const handleSubmit = (event) => {
 
     // Limpar os valores do formulário.
     form.reset();
-
-    // 1 Fechar o modal.
-    //const fruteiraModal = bootstrap.Modal.getInstance(document.getElementById('fruteiraModal'));
-    //fruteiraModal.hide();
     
-    // 2 Fechar o modal.
+    // Fechar o modal.
     $('#cardapioModal').modal('toggle');
 
     // Exibe uma notificação de sucesso.
@@ -98,6 +96,6 @@ const handleSubmit = (event) => {
 // Adiciona os listeners (ouvintes de eventos)
 const form = document.getElementById('form-fruteira');
 form.addEventListener('submit', handleSubmit);
-
+// faz com o que o navegador espere carregar a pagina para entao chamar a função.
 let body = document.body;
 body.onload = carregarTabela;

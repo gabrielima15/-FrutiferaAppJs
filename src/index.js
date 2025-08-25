@@ -1,7 +1,8 @@
+// importação do array de fruteiras da pasta dataset
 import { fruteirasCard } from './dataset/preparacoes.js';
 
 let getCartao = (fruteira) => {
-    // Calcula a idade da planta em meses
+    // Calcula a idade da planta em meses a partir da data do plantio
     const dataPlantio = new Date(fruteira.dataPlantio);
     const hoje = new Date();
     let meses = (hoje.getFullYear() - dataPlantio.getFullYear()) * 12;
@@ -49,5 +50,5 @@ let createCartoes = () => {
         setCartaoCol(cartao);
     }
 };
-
+// chamar a função para criar os cartões
 createCartoes();
