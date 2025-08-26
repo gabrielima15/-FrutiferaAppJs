@@ -59,7 +59,7 @@ const handleSubmit = (event) => {
     const form = document.getElementById('form-fruteira');  // Dados do formulário -> criação do objeto. 
     
     const formData = new FormData(form);
-    const fruteira = Object.fromEntries(formData);
+    const fruteira = Object.fromEntries(formData); 
 
     
     fruteira.id = Date.now();  // Adiciona o ID único gerado automaticamente
